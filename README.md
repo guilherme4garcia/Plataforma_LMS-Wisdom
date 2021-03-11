@@ -32,7 +32,7 @@ Desenvolver uma plataforma web voltada ao ensino à distância para a gestão e 
 
 [![Github Badge](https://img.shields.io/badge/PO-Guilherme_Garcia-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/guilherme4garcia)
 
-[![Github Badge](https://img.shields.io/badge/DEV-NOME_SOBRENOME-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Gabrieltg7)
+[![Github Badge](https://img.shields.io/badge/DEV-Gabriel_Teixeira-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Gabrieltg7)
 
 [![Github Badge](https://img.shields.io/badge/DEV-NOME_SOBRENOME-100000?style=for-the-badge&logo=github&logoColor=white)](LINK)
 
