@@ -34,11 +34,11 @@ Desenvolver uma plataforma web voltada ao ensino à distância para a gestão e 
 
 [![Github Badge](https://img.shields.io/badge/DEV-Gabriel_Teixeira-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Gabrieltg7)
 
-[![Github Badge](https://img.shields.io/badge/DEV-NOME_SOBRENOME-100000?style=for-the-badge&logo=github&logoColor=white)](LINK)
+[![Github Badge](https://img.shields.io/badge/DEV-Luis_Verola-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LVerola)
 
-[![Github Badge](https://img.shields.io/badge/DEV-NOME_SOBRENOME-100000?style=for-the-badge&logo=github&logoColor=white)](LINK)
+[![Github Badge](https://img.shields.io/badge/DEV-Lucca_Santiago-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LuccaSantiagoDev)
 
-[![Github Badge](https://img.shields.io/badge/DEV-NOME_SOBRENOME-100000?style=for-the-badge&logo=github&logoColor=white)](LINK)
+[![Github Badge](https://img.shields.io/badge/DEV-Henrique_Erzinger-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/henrique73)
 
 
 
