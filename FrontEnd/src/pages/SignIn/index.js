@@ -1,14 +1,14 @@
-import React, { useRef, useCallback, useState } from 'react';
+import React from 'react';
 
-import { Form, Input, Button, Checkbox } from 'antd';
+import { Form, Input, Button, Radio } from 'antd';
 
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import 'antd/dist/antd.css';
 
 import { Helmet } from 'react-helmet';
 
-import { FiLogIn, FiMail, FiLock } from 'react-icons/fi';
+import { FiMail, FiLock } from 'react-icons/fi';
 
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
@@ -33,6 +33,7 @@ function SignIn() {
           <Form
             name="LoginForm"
             className="login-form"
+            layout="verfical"
             initialValues={{ remember: true }}
             onFinish={onFinish}
           >
@@ -41,36 +42,48 @@ function SignIn() {
             <h1>Faça seu Login</h1>
             <p>Preencha os campos e faça seu login na nossa plataforma.</p>
 
+            <Form.Item name="isStudent" label="Entrar como aluno ou professor?">
+              <Radio.Group defaultValue="true">
+                <Radio.Button value="true">Aluno</Radio.Button>
+                <Radio.Button value="false">Professor</Radio.Button>
+              </Radio.Group>
+            </Form.Item>
+
             <Form.Item
               name="email"
+              label="Insira seu E-mail"
               rules={[
+                {
+                  type: 'email',
+                  message: 'O e-mail tem que ser válido!',
+                },
                 { required: true, message: 'Porfavor insira seu e-mail!' },
               ]}
             >
               <Input
                 prefix={<FiMail className="site-form-item-icon" />}
-                placeholder="E-mail"
+                placeholder="example@email.com"
               />
             </Form.Item>
             <Form.Item
               name="password"
+              label="Insira sua senha"
               rules={[
                 { required: true, message: 'Porfavor insira sua Senha!' },
               ]}
             >
-              <Input
+              <Input.Password
                 prefix={<FiLock className="site-form-item-icon" />}
-                type="password"
-                placeholder="Senha"
+                placeholder="******"
               />
             </Form.Item>
 
-            <Form.Item>
-              <Link to="forgot-password">
+            {/* <Form.Item>
+              <Link to="forgot-password" className="login-form-forgot">
                 <FiLock />
                 Esqueceu sua senha?
               </Link>
-            </Form.Item>
+            </Form.Item> */}
 
             <Form.Item>
               <Button
@@ -78,13 +91,9 @@ function SignIn() {
                 htmlType="submit"
                 className="login-form-button"
               >
-                Log in
+                Entrar
               </Button>
-              Or{' '}
-              <Link to="/signup">
-                <FiLogIn />
-                Criar conta
-              </Link>
+              Ou <Link to="/signup">Crie sua conta</Link>
             </Form.Item>
           </Form>
         </styles.AnimationContainer>
