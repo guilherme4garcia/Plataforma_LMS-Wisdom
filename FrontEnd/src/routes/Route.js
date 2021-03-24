@@ -1,45 +1,43 @@
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/prop-types */
+// /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
-import PropTypes from 'prop-types';
-import { Route, Redirect } from 'react-router-dom';
+import { Route as ReactDOMRoute, Redirect } from 'react-router-dom';
 
-import AuthLayout from '../pages/_layouts/auth';
-import DefaultLayout from '../pages/_layouts/default';
+import { useAuth } from '../hooks/AuthContext';
 
-export default function RouteWrapper({
-  component: Component,
-  isPrivate,
-  ...rest
-}) {
-  const signed = false;
-
-  if (!signed && isPrivate) {
-    return <Redirect to="/" />;
-  }
-
-  if (signed && !isPrivate) {
-    return <Redirect to="/dashboard" />;
-  }
-
-  const Layout = signed ? DefaultLayout : AuthLayout;
-
+const Route = ({ isPrivate = false, Component, ...rest }) => {
+  const { user } = useAuth();
   return (
-    <Route
+    <ReactDOMRoute
       {...rest}
-      render={(props) => (
-        <Layout>
-          <Component {...props} />
-        </Layout>
-      )}
+      render={({ location }) => {
+        if (isPrivate && !user) {
+          return (
+            <Redirect
+              to={{
+                pathname: '/',
+                state: { from: location },
+              }}
+            />
+          );
+        }
+
+        if (isPrivate && !user.active) {
+          return (
+            <Redirect
+              to={{
+                pathname: '/confirm-code',
+                state: { from: location },
+              }}
+            />
+          );
+        }
+
+        return <Component />;
+      }}
     />
   );
-}
-
-RouteWrapper.propTypes = {
-  isPrivate: PropTypes.bool,
-  component: PropTypes.oneOfType([PropTypes.element, PropTypes.func])
-    .isRequired,
 };
 
-RouteWrapper.defaultProps = {
-  isPrivate: false,
-};
+export default Route;
