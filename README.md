@@ -16,7 +16,8 @@
 <img src="https://media.discordapp.net/attachments/811312529740922880/825921354380738570/unknown.png?width=1025&height=391">
 
 #Telas
+<hr>
 <img src="https://media.discordapp.net/attachments/811312529740922880/825920237622788166/unknown.png?width=1025&height=490">
 <img src="https://media.discordapp.net/attachments/811312529740922880/825920427703795752/unknown.png?width=1025&height=493">
 <img src="https://media.discordapp.net/attachments/811312529740922880/825920162922364928/unknown.png?width=1025&height=394">
-<hr>
+
