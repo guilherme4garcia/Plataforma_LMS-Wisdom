@@ -34,7 +34,7 @@ Desenvolver uma plataforma web voltada ao ensino à distância para a gestão e 
 
 
 # Backlog
-
+<img src="https://media.discordapp.net/attachments/809534694173573136/821877091363979274/backlog1_1.png?width=391&height=498"/>
 # Sprints
 
 # Equipe
