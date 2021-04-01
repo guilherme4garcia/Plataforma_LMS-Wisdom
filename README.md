@@ -10,7 +10,7 @@
     <a href="#Sobre-o-projeto">Sobre o Projeto</a> •
     <a href="#Tecnologias">Tecnologias</a> •
     <a href="#Backlog">Backlog</a> •
-    <a href="#Sprints">Sprints</a> •
+    <a href="#UserStories">User Stories</a> •
     <a href="#Equipe">Equipe</a> •
  </p> 
  <br>
@@ -34,9 +34,9 @@ Desenvolver uma plataforma web voltada ao ensino à distância para a gestão e 
 
 
 # Backlog
-<img src="https://media.discordapp.net/attachments/809534694173573136/821877091363979274/backlog1_1.png?width=391&height=498"/>
-# Sprints
-
+<img alt="Backlog" src="https://media.discordapp.net/attachments/809534694173573136/821877091363979274/backlog1_1.png?width=391&height=498"/>
+# User Stories
+<img alt="UserStories" src="https://media.discordapp.net/attachments/811312529740922880/827025091828776970/unknown.png?width=709&height=498"/>
 # Equipe
 
 [![Github Badge](https://img.shields.io/badge/MASTER-Letícia_Santos-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LeticiaSan)
