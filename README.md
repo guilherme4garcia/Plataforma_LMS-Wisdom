@@ -1,7 +1,7 @@
 ﻿
 
 <div align="center">
-    <! --  <img src="">    inserir logo do projeto -->
+      //<img src="">   <! -- inserir logo do projeto -->
 </div>
 
 <h3 align="center"> <! -- slogan -->  </h3> <br>
