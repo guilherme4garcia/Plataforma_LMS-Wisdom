@@ -10,7 +10,7 @@
     <a href="#Sobre-o-projeto">Sobre o Projeto</a> •
     <a href="#Tecnologias">Tecnologias</a> •
     <a href="#Backlog">Backlog</a> •
-    <a href="#UserStories">User Stories</a> •
+    <a href="#User-Stories">User Stories</a> •
     <a href="#Equipe">Equipe</a> •
  </p> 
  <br>
