@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://tuffi.db.elephantsql.com:5432/sydnnkfg?currentSchema=teachingplatform
+    username: sydnnkfg
+    password: SS4ioX76DTicSe0xdQIf75iOaLETGlWv
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+  flyway:
+    enabled: true
+
