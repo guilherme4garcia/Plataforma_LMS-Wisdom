@@ -48,15 +48,14 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.1</version>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<!-- Remove when DB is Done -->
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<version>1.4.200</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -103,11 +102,11 @@
 					</execution>
 				</executions>
 				<configuration>
-					<url>jdbc:postgresql://tuffi.db.elephantsql.com:5432/sydnnkfg</url>
-					<user>sydnnkfg</user>
-					<password>SS4ioX76DTicSe0xdQIf75iOaLETGlWv</password>
+					<url>jdbc:postgresql://xdtegcie:bk597m73TvxONLROlFFIhJcLPV27GM7X@tuffi.db.elephantsql.com:5432/xdtegcie</url>
+					<user>xdtegcie</user>
+					<password>bk597m73TvxONLROlFFIhJcLPV27GM7X</password>
 					<schemas>
-						<schema>teachingplatform</schema>
+						<schema>public</schema>
 					</schemas>
 				</configuration>
 			</plugin>

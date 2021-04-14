@@ -19,16 +19,12 @@ public class UserAccountService {
 
     private final UserAccountRepository repository;
 
-    private final BCryptPasswordEncoder bCryptPasswordEncoder;
-
     private final PasswordEncoder passwordEncoder;
 
 
-    public UserAccountService(UserAccountRepository repository, PasswordEncoder passwordEncoder,
-                              BCryptPasswordEncoder bCryptPasswordEncoder) {
+    public UserAccountService(UserAccountRepository repository, PasswordEncoder passwordEncoder) {
         this.repository = repository;
         this.passwordEncoder = passwordEncoder;
-        this.bCryptPasswordEncoder = bCryptPasswordEncoder;
     }
 
     public List<UserAccountDTO> listAll() {
@@ -61,26 +57,6 @@ public class UserAccountService {
 
     public void delete(Long id) {
         repository.deleteById(id);
-    }
-
-    public void changePassword(String newPassword) {
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        String email = ((ProjectUserDetails) (authentication).getPrincipal()).getUsername();
-
-        UserAccount userAccount = findByEmail(email);
-        userAccount.setPassword(passwordEncoder.encode(newPassword));
-
-        repository.save(userAccount);
-
-    }
-
-    public boolean checkPassword(String password) {
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        String email = ((ProjectUserDetails) (authentication).getPrincipal()).getUsername();
-
-        UserAccount userAccount = findByEmail(email);
-
-        return passwordEncoder.matches(password, userAccount.getPassword());
     }
 
 }
