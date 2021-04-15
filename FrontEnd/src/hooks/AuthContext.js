@@ -7,8 +7,8 @@ const AuthContext = createContext({});
 
 const AuthProvider = ({ children }) => {
   const [data, setData] = useState(() => {
-    const token = localStorage.getItem('@Delta:token');
-    const user = localStorage.getItem('@Delta:user');
+    const token = localStorage.getItem('@Wisdom:token');
+    const user = localStorage.getItem('@Wisdom:user');
 
     if (token && user) {
       return { token, user: JSON.parse(user) };
@@ -25,15 +25,15 @@ const AuthProvider = ({ children }) => {
 
     const { token, user } = response.data;
 
-    localStorage.setItem('@Delta:token', token);
-    localStorage.setItem('@Delta:user', JSON.stringify(user));
+    localStorage.setItem('@Wisdom:token', token);
+    localStorage.setItem('@Wisdom:user', JSON.stringify(user));
 
     setData({ token, user });
   }, []);
 
   const signOut = useCallback(() => {
-    localStorage.removeItem('@Delta:token: token');
-    localStorage.removeItem('@Delta:user: user');
+    localStorage.removeItem('@Wisdom:token: token');
+    localStorage.removeItem('@Wisdom:user: user');
 
     setData({});
   }, []);

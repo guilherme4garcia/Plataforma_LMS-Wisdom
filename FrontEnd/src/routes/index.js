@@ -6,7 +6,8 @@ import LandingPage from '../pages/LandingPage';
 import SignIn from '../pages/SignIn';
 import SignUp from '../pages/SignUp';
 
-import Dashboard from '../pages/Dashboard';
+import StudentDashboard from '../pages/StudentDashboard';
+import TeacherDashboard from '../pages/TeacherDashboard';
 
 export default function Routes() {
   return (
@@ -15,7 +16,14 @@ export default function Routes() {
       <Route path="/signin" exact component={SignIn} />
       <Route path="/signup" exact component={SignUp} />
 
-      <Route path="/dashboard" component={Dashboard} isPrivate />
+      <Route
+        path="/student/dashboard"
+        component={StudentDashboard} /* isPrivate */
+      />
+      <Route
+        path="/teacher/dashboard"
+        component={TeacherDashboard} /* isPrivate */
+      />
     </Switch>
   );
 }
