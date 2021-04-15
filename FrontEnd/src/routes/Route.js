@@ -23,17 +23,6 @@ const Route = ({ isPrivate = false, Component, ...rest }) => {
           );
         }
 
-        if (isPrivate && !user.active) {
-          return (
-            <Redirect
-              to={{
-                pathname: '/confirm-code',
-                state: { from: location },
-              }}
-            />
-          );
-        }
-
         return <Component />;
       }}
     />
