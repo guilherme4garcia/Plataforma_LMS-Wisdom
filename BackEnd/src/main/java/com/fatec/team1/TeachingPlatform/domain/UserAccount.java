@@ -13,9 +13,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import static com.fatec.team1.TeachingPlatform.domain.AccountRole.PROFESSOR;
-import static com.fatec.team1.TeachingPlatform.domain.AccountRole.STUDENT;
-
 @Entity
 @Table(name = "user_account")
 @Data
@@ -31,11 +28,4 @@ public class UserAccount extends Auditable<String>{
     private String password;
     private AccountRole role;
 
-    public boolean isStudent() {
-        return role.equals(STUDENT);
-    }
-
-    public boolean isProfessor() {
-        return role.equals(PROFESSOR);
-    }
 }

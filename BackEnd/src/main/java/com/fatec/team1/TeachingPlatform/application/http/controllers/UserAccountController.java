@@ -13,8 +13,6 @@ public class UserAccountController implements WebMvcConfigurer {
 
     private final UserAccountRepository repository;
 
-    private final String viewFolder = "userAccount/";
-
     public UserAccountController(UserAccountRepository repository) {
         this.repository = repository;
     }

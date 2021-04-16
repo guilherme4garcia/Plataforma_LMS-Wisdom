@@ -1,13 +1,9 @@
 package com.fatec.team1.TeachingPlatform.application.services;
 
 import com.fatec.team1.TeachingPlatform.application.dto.UserAccountDTO;
-import com.fatec.team1.TeachingPlatform.application.http.authentication.ProjectUserDetails;
 import com.fatec.team1.TeachingPlatform.application.repositories.UserAccountRepository;
 import com.fatec.team1.TeachingPlatform.domain.AccountRole;
 import com.fatec.team1.TeachingPlatform.domain.UserAccount;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
