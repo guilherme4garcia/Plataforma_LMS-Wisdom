@@ -3,12 +3,12 @@
 
 # Sprint 2
 <hr>
-<img src="https://i.imgur.com/CF5Ppjo.png">
+<img src="https://i.imgur.com/5CSEuGN.png">
 
 ## Burndown
 
 <hr>
-<img src="https://i.imgur.com/um9XMSh.png">
+<img src="https://i.imgur.com/S2k8Mrf.png">
 
 ## MER
 
