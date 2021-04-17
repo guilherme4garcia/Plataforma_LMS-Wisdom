@@ -36,6 +36,11 @@ Página inicial Professor:
 
 ## Telas
 
+https://user-images.githubusercontent.com/40868447/115127902-80450700-9fb0-11eb-8da8-f55eca74080f.mp4
+
+
+
+
 Tela inicial:
 <img src="https://i.imgur.com/84Xm0bZ.png">
 
