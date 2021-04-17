@@ -23,7 +23,7 @@ Categorias:
 Cadastro curso: <br>
 <img src="https://i.imgur.com/g2e5Ri3.png">
 
-Cadastro curso 2:
+Cadastro curso 2: <br>
 <img src="https://i.imgur.com/ZMf00iP.png">
 
 Grid de cursos:
