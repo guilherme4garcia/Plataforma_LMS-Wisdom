@@ -26,9 +26,6 @@ Cadastro curso: <br>
 Cadastro curso 2:
 <img src="https://i.imgur.com/ZMf00iP.png">
 
-Novo curso: <br>
-<img src="https://i.imgur.com/SpYwLGl.png">
-
 Grid de cursos:
 <hr>
 <img src="https://i.imgur.com/snLjx1v.png">
