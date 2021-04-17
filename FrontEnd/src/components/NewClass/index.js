@@ -63,19 +63,36 @@ export default function NewClass() {
               <Select.Option value="Tech">Tecnologia</Select.Option>
             </Select>
           </Form.Item>
+
+          <Form.Item
+            label="Descrição do Curso:"
+            name="couseDescription"
+            style={{
+              display: 'inline-block',
+              width: '100%',
+            }}
+            rules={[
+              {
+                required: true,
+                message: 'Por favor insira a descrição do curso!',
+              },
+            ]}
+          >
+            <Input.TextArea rows={2} />
+          </Form.Item>
         </Card>
 
-        <Card
+        {/* <Card
           title="Imagens do curso"
           style={{ width: '100%' }}
           bordered={false}
-        >
-          <Form.Item>
-            <Button type="primary" htmlType="submit">
-              Criar
-            </Button>
-          </Form.Item>
-        </Card>
+        > */}
+        <Form.Item>
+          <Button type="primary" htmlType="submit">
+            Criar
+          </Button>
+        </Form.Item>
+        {/* </Card> */}
       </Form>
     </styles.Content>
   );
