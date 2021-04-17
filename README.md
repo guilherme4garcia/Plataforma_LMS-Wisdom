@@ -1,14 +1,15 @@
+<h3 align="center">
+      <center><img src="https://i.imgur.com/b0rTKpo.png"></center>
+</h3>
 
+<h3 align="center"> 
+Aprendizado descomplicado para qualquer pessoa, em qualquer lugar </h3> <br>
 
-<div align="center">
-      <! -- <img src="">   <! -- inserir logo do projeto -->
-</div>
-
-<h3 align="center"> <! -- slogan -->  </h3> <br>
 
  <p align="center">
     <a href="#Sobre-o-projeto">Sobre o Projeto</a> •
     <a href="#Tecnologias">Tecnologias</a> •
+    <a href="#Sprints">Sprints</a> •
     <a href="#Backlog">Backlog</a> •
     <a href="#User-Stories">User Stories</a> •
     <a href="#Equipe">Equipe</a> •
@@ -31,6 +32,14 @@ Desenvolver uma plataforma web voltada ao ensino à distância para a gestão e 
 <img alt="React" src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
 <img alt="Spring" src="https://img.shields.io/badge/spring%20-%236DB33F.svg?&style=for-the-badge&logo=spring&logoColor=white"/>
 
+# Sprints
+
+| Data | Links |
+| ------ | ------ |
+|    31/03/2021    |[Sprint 1](https://github.com/LeticiaSan/Plataforma-de-Ensino---Time-1/tree/sprint_1) |
+|    18/04/2021    |[Sprint 2](https://github.com/LeticiaSan/Plataforma-de-Ensino---Time-1/tree/sprint_2) |
+|    16/05/2021    |Sprint 3|
+|    05/06/2021    |Sprint 4|
 
 
 # Backlog
