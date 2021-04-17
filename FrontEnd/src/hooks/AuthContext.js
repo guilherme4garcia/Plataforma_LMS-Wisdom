@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { createContext, useCallback, useState, useContext } from 'react';
 
-import api from '../services/api';
+// import api from '../services/api';
 
 const AuthContext = createContext({});
 
@@ -17,8 +17,8 @@ const AuthProvider = ({ children }) => {
     return {};
   });
 
-  const signIn = useCallback(async ({ email, password }) => {
-    const response = await api.post('sessions', {
+  const signIn = useCallback(async ({ /* email, password */ user }) => {
+    /* const response = await api.post('sessions', {
       email,
       password,
     });
@@ -26,7 +26,10 @@ const AuthProvider = ({ children }) => {
     const { token, user } = response.data;
 
     localStorage.setItem('@Wisdom:token', token);
+    localStorage.setItem('@Wisdom:user', JSON.stringify(user)); */
+    const token = 'aaaaa';
     localStorage.setItem('@Wisdom:user', JSON.stringify(user));
+    localStorage.setItem('@Wisdom:token', token);
 
     setData({ token, user });
   }, []);
