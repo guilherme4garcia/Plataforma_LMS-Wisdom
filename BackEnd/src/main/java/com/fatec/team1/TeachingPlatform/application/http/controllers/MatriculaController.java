@@ -6,7 +6,7 @@ import com.fatec.team1.TeachingPlatform.domain.Matricula;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import java.util.List;
+import java.util.HashSet;
 
 @RestController
 public class MatriculaController implements WebMvcConfigurer {
@@ -31,7 +31,7 @@ public class MatriculaController implements WebMvcConfigurer {
     }
 
     @GetMapping("/matricula/userList")
-    List<Matricula> all(@RequestBody Matricula matricula){
+    HashSet all(@RequestBody Matricula matricula){
         return service.listUser(matricula.getIdUsuarioFk());
     }
 }

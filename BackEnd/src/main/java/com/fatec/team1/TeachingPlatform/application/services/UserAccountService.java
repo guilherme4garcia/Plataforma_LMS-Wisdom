@@ -4,6 +4,7 @@ import com.fatec.team1.TeachingPlatform.application.dto.UserAccountDTO;
 import com.fatec.team1.TeachingPlatform.application.repositories.UserAccountRepository;
 import com.fatec.team1.TeachingPlatform.domain.AccountRole;
 import com.fatec.team1.TeachingPlatform.domain.UserAccount;
+import org.apache.catalina.User;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 

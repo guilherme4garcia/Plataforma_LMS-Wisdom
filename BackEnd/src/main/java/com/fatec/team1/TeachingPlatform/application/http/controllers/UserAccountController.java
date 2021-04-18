@@ -46,15 +46,4 @@ public class UserAccountController implements WebMvcConfigurer {
     void deleteAccount(@PathVariable Long id){
         repository.deleteById(id);
     }
-
-
-//    @RequestMapping("/user-account/list")
-//    public String listProfile(Model model) {
-//        List<UserAccountDTO> profileList = profileService.listAll();
-//        model.addAttribute("profileList", profileList);
-//
-//        return viewFolder + "list";
-//    }
-
-
 }
