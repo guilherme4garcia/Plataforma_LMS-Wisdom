@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Form, Input, Button, Radio } from 'antd';
 
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import 'antd/dist/antd.css';
 
@@ -11,15 +11,26 @@ import { Helmet } from 'react-helmet';
 import { FiMail, FiLock } from 'react-icons/fi';
 
 import 'react-toastify/dist/ReactToastify.css';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 
+import faker from 'faker';
 import * as styles from './styles';
 
-// import LogoIMG from '../../assets/Only_Icon.svg';
+import Logo from '../../assets/logo.svg';
+import { useAuth } from '~/hooks/AuthContext';
 
 function SignIn() {
-  const onFinish = (values) => {
-    toast.success('Recebi os valores: ', JSON.stringify(values));
+  const history = useHistory();
+  const { signIn } = useAuth();
+
+  const onFinish = async (values) => {
+    const user = {
+      isStudent: values.isStudent,
+      name: faker.name.firstName(),
+      email: values.email,
+    };
+    await signIn({ user });
+    history.push('/dashboard');
   };
 
   return (
@@ -37,15 +48,24 @@ function SignIn() {
             initialValues={{ remember: true }}
             onFinish={onFinish}
           >
-            {/* <img src={LogoGestor} alt="Logo Gestor" /> */}
+            <img src={Logo} alt="Logo Wisdom" />
 
             <h1>Faça seu Login</h1>
             <p>Preencha os campos e faça seu login na nossa plataforma.</p>
 
-            <Form.Item name="isStudent" label="Entrar como aluno ou professor?">
-              <Radio.Group defaultValue="true">
-                <Radio.Button value="true">Aluno</Radio.Button>
-                <Radio.Button value="false">Professor</Radio.Button>
+            <Form.Item
+              name="isStudent"
+              label="Entrar como aluno ou professor?"
+              rules={[
+                {
+                  required: true,
+                  message: 'Por favor insira seu Tipo de usuário',
+                },
+              ]}
+            >
+              <Radio.Group>
+                <Radio.Button value="aluno">Aluno</Radio.Button>
+                <Radio.Button value="professor">Professor</Radio.Button>
               </Radio.Group>
             </Form.Item>
 
@@ -57,7 +77,7 @@ function SignIn() {
                   type: 'email',
                   message: 'O e-mail tem que ser válido!',
                 },
-                { required: true, message: 'Porfavor insira seu e-mail!' },
+                { required: true, message: 'Por favor insira seu e-mail!' },
               ]}
             >
               <Input
@@ -69,7 +89,7 @@ function SignIn() {
               name="password"
               label="Insira sua senha"
               rules={[
-                { required: true, message: 'Porfavor insira sua Senha!' },
+                { required: true, message: 'Por favor insira sua Senha!' },
               ]}
             >
               <Input.Password
@@ -77,13 +97,6 @@ function SignIn() {
                 placeholder="******"
               />
             </Form.Item>
-
-            {/* <Form.Item>
-              <Link to="forgot-password" className="login-form-forgot">
-                <FiLock />
-                Esqueceu sua senha?
-              </Link>
-            </Form.Item> */}
 
             <Form.Item>
               <Button

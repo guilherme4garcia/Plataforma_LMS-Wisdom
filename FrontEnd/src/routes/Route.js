@@ -8,32 +8,20 @@ import { useAuth } from '../hooks/AuthContext';
 
 const Route = ({ isPrivate = false, Component, ...rest }) => {
   const { user } = useAuth();
+
+  if (isPrivate && !user) {
+    return (
+      <Redirect
+        to={{
+          pathname: '/signin',
+        }}
+      />
+    );
+  }
   return (
     <ReactDOMRoute
       {...rest}
-      render={({ location }) => {
-        if (isPrivate && !user) {
-          return (
-            <Redirect
-              to={{
-                pathname: '/',
-                state: { from: location },
-              }}
-            />
-          );
-        }
-
-        if (isPrivate && !user.active) {
-          return (
-            <Redirect
-              to={{
-                pathname: '/confirm-code',
-                state: { from: location },
-              }}
-            />
-          );
-        }
-
+      render={() => {
         return <Component />;
       }}
     />

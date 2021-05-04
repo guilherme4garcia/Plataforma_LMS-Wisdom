@@ -2,12 +2,12 @@ import React from 'react';
 
 import { Layout, Breadcrumb, Row, Col } from 'antd';
 import PrivateNavbar from '../../components/PrivateNavbar';
-import ClassesList from '~/components/ClassesList';
+import NewClass from '~/components/NewClass';
 import { useAuth } from '~/hooks/AuthContext';
 
 const { Header, Content } = Layout;
 
-function Dashboard() {
+function NewClassPage() {
   const { user } = useAuth();
 
   return (
@@ -23,9 +23,9 @@ function Dashboard() {
               <Breadcrumb.Item>
                 {user.isStudent === 'aluno' ? 'Aluno' : 'Professor'}
               </Breadcrumb.Item>
-              <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
+              <Breadcrumb.Item>Novo Curso</Breadcrumb.Item>
             </Breadcrumb>
-            <ClassesList />
+            <NewClass />
           </Col>
           <Col span="2" />
         </Row>
@@ -34,4 +34,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default NewClassPage;
