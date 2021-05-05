@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Form, Input, Button, Radio } from 'antd';
 
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import 'antd/dist/antd.css';
 
@@ -15,12 +15,22 @@ import { ToastContainer, toast } from 'react-toastify';
 
 import * as styles from './styles';
 
-// import LogoIMG from '../../assets/Only_Icon.svg';
+import Logo from '../../assets/logo.svg';
+import api from '~/services/api';
 
 function SignUp() {
-  const onFinish = (values) => {
-    toast.success('Recebi os valores: ', JSON.stringify(values));
-    console.log(values);
+  const history = useHistory();
+
+  const onFinish = async (values) => {
+    try {
+      await api.post('user-account/new', values);
+
+      toast.success('Usuário Cadastrado com sucesso! Agora realize seu Login');
+
+      history.push('/signin');
+    } catch (error) {
+      toast.error('Erro ao realizar cadastro.');
+    }
   };
 
   return (
@@ -38,18 +48,24 @@ function SignUp() {
             initialValues={{ remember: true }}
             onFinish={onFinish}
           >
-            {/* <img src={LogoGestor} alt="Logo Gestor" /> */}
+            <img src={Logo} alt="Logo Gestor" />
 
             <h1>Faça seu Cadastro</h1>
             <p>Preencha os campos e cadastre-se na nossa plataforma.</p>
 
             <Form.Item
-              name="isStudent"
+              name="role"
               label="Cadastrar como aluno ou professor?"
+              rules={[
+                {
+                  required: true,
+                  message: 'Insira qual cadastro deseja fazer!',
+                },
+              ]}
             >
-              <Radio.Group defaultValue="true">
-                <Radio.Button value="true">Aluno</Radio.Button>
-                <Radio.Button value="false">Professor</Radio.Button>
+              <Radio.Group>
+                <Radio.Button value="ALUNO">Aluno</Radio.Button>
+                <Radio.Button value="PROFESSOR">Professor</Radio.Button>
               </Radio.Group>
             </Form.Item>
 
@@ -97,39 +113,6 @@ function SignUp() {
                 placeholder="******"
               />
             </Form.Item>
-
-            <Form.Item
-              name="confirmPassword"
-              label="Confirme sua senha"
-              dependencies={['password']}
-              hasFeedback
-              rules={[
-                {
-                  required: true,
-                  message: 'Porfavor confirma sua senha!',
-                },
-                ({ getFieldValue }) => ({
-                  validator(_, value) {
-                    if (!value || getFieldValue('password') === value) {
-                      return Promise.resolve();
-                    }
-                    return Promise.reject(new Error('As senhas não combinam!'));
-                  },
-                }),
-              ]}
-            >
-              <Input.Password
-                prefix={<FiLock className="site-form-item-icon" />}
-                placeholder="******"
-              />
-            </Form.Item>
-
-            {/* <Form.Item>
-              <Link to="forgot-password" className="signup-form-forgot">
-                <FiLock />
-                Esqueceu sua senha?
-              </Link>
-            </Form.Item> */}
 
             <Form.Item>
               <Button
