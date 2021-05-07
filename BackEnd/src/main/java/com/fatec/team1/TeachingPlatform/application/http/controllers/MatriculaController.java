@@ -8,6 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.util.HashSet;
 
+@CrossOrigin
 @RestController
 public class MatriculaController implements WebMvcConfigurer {
 
