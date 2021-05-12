@@ -4,7 +4,6 @@ import com.fatec.team1.TeachingPlatform.application.config.JwtRequest;
 import com.fatec.team1.TeachingPlatform.application.config.JwtResponse;
 import com.fatec.team1.TeachingPlatform.application.config.JwtTokenUtil;
 import com.fatec.team1.TeachingPlatform.application.config.JwtUserDetailsService;
-import com.fatec.team1.TeachingPlatform.application.repositories.UserAccountRepository;
 import com.fatec.team1.TeachingPlatform.application.services.UserAccountService;
 import com.fatec.team1.TeachingPlatform.domain.UserAuthentication;
 import org.springframework.beans.factory.annotation.Autowired;

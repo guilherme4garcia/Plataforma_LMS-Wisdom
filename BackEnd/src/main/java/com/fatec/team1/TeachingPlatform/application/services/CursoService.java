@@ -1,10 +1,7 @@
 package com.fatec.team1.TeachingPlatform.application.services;
 
-import com.fatec.team1.TeachingPlatform.application.dto.UserAccountDTO;
 import com.fatec.team1.TeachingPlatform.application.repositories.CursoRepository;
-import com.fatec.team1.TeachingPlatform.domain.AccountRole;
 import com.fatec.team1.TeachingPlatform.domain.Curso;
-import com.fatec.team1.TeachingPlatform.domain.UserAccount;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
