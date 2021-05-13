@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcf5b2c0-c846-462d-8c33-687bd59f216c" name="Default Changelist" comment="" />
+    <list default="true" id="dcf5b2c0-c846-462d-8c33-687bd59f216c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/fatec/team1/TeachingPlatform/TeachingPlatformApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/fatec/team1/TeachingPlatform/TeachingPlatformApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +33,7 @@
       <option name="presentableId" value="Default" />
       <updated>1618444557402</updated>
       <workItem from="1618444558435" duration="15000" />
+      <workItem from="1620840562955" duration="27000" />
     </task>
     <servers />
   </component>
@@ -37,9 +41,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1618444571547">
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1620840588418">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080/-1600.0.1600.900@0.0.1920.1080" timestamp="1618444571547" />
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080/-1600.81.1600.900@0.0.1920.1080" timestamp="1620840588418" />
   </component>
 </project>

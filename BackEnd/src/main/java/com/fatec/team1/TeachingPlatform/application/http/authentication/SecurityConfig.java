@@ -56,11 +56,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.csrf().disable()
-<<<<<<< Updated upstream
-                .authorizeRequests().antMatchers("/authenticate","/v2/api-docs","/user-account/new", "/configuration/ui", "/swagger-resources/**", "/configuration/**", "/swagger-ui.html", "/webjars/**").permitAll().
-=======
                 .authorizeRequests().antMatchers("/authenticate","env","swagger-ui.html","/v2/api-docs","/sessions","/user-account/new", "/configuration/ui", "/swagger-resources/**", "/configuration/**", "/swagger-ui.html", "/webjars/**").permitAll().
->>>>>>> Stashed changes
         anyRequest().authenticated().and().
                 exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint).and().sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
