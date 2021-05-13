@@ -3,6 +3,7 @@ package com.fatec.team1.TeachingPlatform.application.http.controllers;
 import com.fatec.team1.TeachingPlatform.application.repositories.UserAccountRepository;
 import com.fatec.team1.TeachingPlatform.application.services.UserAccountService;
 import com.fatec.team1.TeachingPlatform.domain.UserAccount;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -14,8 +15,11 @@ public class UserAccountController implements WebMvcConfigurer {
 
     private final UserAccountRepository repository;
 
-    public UserAccountController(UserAccountRepository repository) {
+    private final UserAccountService accountService;
+
+    public UserAccountController(UserAccountRepository repository, @Lazy UserAccountService accountService) {
         this.repository = repository;
+        this.accountService = accountService;
     }
 
     @GetMapping("/user-account/list")
@@ -25,8 +29,7 @@ public class UserAccountController implements WebMvcConfigurer {
 
     @PostMapping("/user-account/new")
     UserAccount newAccount(@RequestBody UserAccount newAccount){
-        System.out.println(newAccount);
-        return repository.save(newAccount);
+        return accountService.save(newAccount);
     }
 
     @PutMapping("/user-account/edit/{id}")

@@ -1,6 +1,5 @@
 package com.fatec.team1.TeachingPlatform.application.config;
 
-import com.fatec.team1.TeachingPlatform.application.http.authentication.ProjectUserDetails;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

@@ -61,6 +61,16 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger-ui</artifactId>
+				<version>3.0.0</version>
+			</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-boot-starter</artifactId>
+			<version>3.0.0</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
@@ -102,9 +112,9 @@
 					</execution>
 				</executions>
 				<configuration>
-					<url>jdbc:postgresql://xdtegcie:bk597m73TvxONLROlFFIhJcLPV27GM7X@tuffi.db.elephantsql.com:5432/xdtegcie</url>
-					<user>xdtegcie</user>
-					<password>bk597m73TvxONLROlFFIhJcLPV27GM7X</password>
+					<url>jdbc:postgresql://tuffi.db.elephantsql.com:5432/lgikitpy</url>
+					<user>lgikitpy</user>
+					<password>6ZtwOXwzjhQfkWGhQ0y_0e1hD4ay_o1Q</password>
 					<schemas>
 						<schema>public</schema>
 					</schemas>

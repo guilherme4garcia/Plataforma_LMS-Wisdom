@@ -17,6 +17,8 @@ public class Curso{
     private long id;
     private String nomeCurso;
     private int UsuarioIdUsuario;
+    private String categoriaCurso;
+    private long imagemCursoId;
 
     public Curso(Curso curso) {
         this.id = curso.getId();

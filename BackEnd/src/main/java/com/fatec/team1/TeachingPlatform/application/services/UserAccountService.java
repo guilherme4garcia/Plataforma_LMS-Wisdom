@@ -4,7 +4,6 @@ import com.fatec.team1.TeachingPlatform.application.dto.UserAccountDTO;
 import com.fatec.team1.TeachingPlatform.application.repositories.UserAccountRepository;
 import com.fatec.team1.TeachingPlatform.domain.AccountRole;
 import com.fatec.team1.TeachingPlatform.domain.UserAccount;
-import org.apache.catalina.User;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -47,9 +46,10 @@ public class UserAccountService {
         return repository.findByEmail(email).get();
     }
 
-    public void save(UserAccount userAccount) {
+    public UserAccount save(UserAccount userAccount) {
         userAccount.setPassword(passwordEncoder.encode(userAccount.getPassword()));
         repository.save(userAccount);
+        return userAccount;
     }
 
     public void delete(Long id) {

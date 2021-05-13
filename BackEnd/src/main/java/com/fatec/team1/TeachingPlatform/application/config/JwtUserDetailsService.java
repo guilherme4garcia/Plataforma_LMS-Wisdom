@@ -1,7 +1,6 @@
 package com.fatec.team1.TeachingPlatform.application.config;
 
 import com.fatec.team1.TeachingPlatform.application.services.UserAccountService;
-import com.fatec.team1.TeachingPlatform.domain.UserAccount;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
