@@ -57,12 +57,12 @@ CREATE TABLE IF NOT EXISTS `01API`.`Aula` (
   `idAula` INT NOT NULL AUTO_INCREMENT,
   `nomeAula` VARCHAR(45) NOT NULL,
   `conteudo` VARCHAR(45) NOT NULL,
-  `idCurso_fk` INT NOT NULL,
+  `idSaladeAula_fk` INT NOT NULL,
   PRIMARY KEY (`idAula`),
-  INDEX `fk_Aula_Curso1_idx` (`idCurso_fk` ASC) ,
-  CONSTRAINT `fk_Aula_Curso1`
-    FOREIGN KEY (`idCurso_fk`)
-    REFERENCES `01API`.`Curso` (`idCurso`)
+  INDEX `fk_Aula_SaladeAula1_idx` (`idSaladeAula_fk` ASC) ,
+  CONSTRAINT `fk_Aula_SaladeAula1`
+    FOREIGN KEY (`idSaladeAula_fk`)
+    REFERENCES `01API`.`SaladeAula` (`idSaladeAula`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -117,6 +117,46 @@ CREATE TABLE IF NOT EXISTS `01API`.`Avaliacao` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
+
+-- -----------------------------------------------------
+-- Table `01API`.`Secao`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `01API`.`Secao` ;
+
+CREATE TABLE IF NOT EXISTS `01API`.`Secao` (
+  `idSecao` INT NOT NULL AUTO_INCREMENT,
+  `nomeSecao` VARCHAR(45) NOT NULL,
+  `descricao` VARCHAR(50) NOT NULL,
+  `informacoes` VARCHAR(255) NOT NULL,
+  `idCurso_fk` INT NOT NULL,
+  PRIMARY KEY (`idSecao`),
+  INDEX `fk_Secao_Curso1_idx` (`idCurso_fk` ASC) ,
+  CONSTRAINT `fk_Secao_Curso1`
+    FOREIGN KEY (`idCurso_fk`)
+    REFERENCES `01API`.`Curso` (`idCurso`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+-- -----------------------------------------------------
+-- Table `01API`.`SaladeAula`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `01API`.`SaladeAula` ;
+
+CREATE TABLE IF NOT EXISTS `01API`.`SaladeAula` (
+  `idSaladeAula` INT NOT NULL AUTO_INCREMENT,
+  `nomeSaladeAula` VARCHAR(45) NOT NULL,
+  `conteudo` VARCHAR(45) NOT NULL,
+  `idUsuario_fk` INT NOT NULL,
+  PRIMARY KEY (`idSaladeAula`),
+  INDEX `fk_SaladeAula_Usuario_idx` (`idUsuario_fk` ASC) ,
+  CONSTRAINT `fk_SaladeAula_Usuario`
+    FOREIGN KEY (`idUsuario_fk`)
+    REFERENCES `01API`.`Usuario` (`idUsuario`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
 
 
 SET SQL_MODE=@OLD_SQL_MODE;
