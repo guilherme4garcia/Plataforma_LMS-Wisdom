@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://tuffi.db.elephantsql.com:5432/xdtegcie
-    username: xdtegcie
-    password: bk597m73TvxONLROlFFIhJcLPV27GM7X
+    url: jdbc:postgresql://tuffi.db.elephantsql.com:5432/lgikitpy
+    username: lgikitpy
+    password: 6ZtwOXwzjhQfkWGhQ0y_0e1hD4ay_o1Q
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
