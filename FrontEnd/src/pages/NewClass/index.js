@@ -21,7 +21,7 @@ function NewClassPage() {
           <Col span="20">
             <Breadcrumb style={{ margin: '16px 0' }}>
               <Breadcrumb.Item>
-                {user.isStudent === 'aluno' ? 'Aluno' : 'Professor'}
+                {user.role === 'ALUNO' ? 'Aluno' : 'Professor'}
               </Breadcrumb.Item>
               <Breadcrumb.Item>Novo Curso</Breadcrumb.Item>
             </Breadcrumb>

@@ -80,19 +80,13 @@ export default function NewClass() {
           >
             <Input.TextArea rows={2} />
           </Form.Item>
-        </Card>
 
-        {/* <Card
-          title="Imagens do curso"
-          style={{ width: '100%' }}
-          bordered={false}
-        > */}
-        <Form.Item>
-          <Button type="primary" htmlType="submit">
-            Criar
-          </Button>
-        </Form.Item>
-        {/* </Card> */}
+          <Form.Item>
+            <Button type="primary" htmlType="submit">
+              Criar
+            </Button>
+          </Form.Item>
+        </Card>
       </Form>
     </styles.Content>
   );

@@ -1,14 +1,20 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 
-import { Tabs, Card } from 'antd';
+import { Tabs, Card, Button } from 'antd';
+import { EditOutlined, DeleteOutlined } from '@ant-design/icons';
 
 import faker from 'faker';
 
+import { Link } from 'react-router-dom';
 import * as styles from './styles';
+import { useAuth } from '~/hooks/AuthContext';
 
 const { TabPane } = Tabs;
 
-export default function ClassesInfo() {
+export default function ClassesInfo({ idCurso }) {
+  const { user } = useAuth();
+
   faker.locale = 'pt_BR';
   return (
     <styles.Content>
@@ -31,6 +37,25 @@ export default function ClassesInfo() {
           Comentários
         </TabPane>
       </Tabs>
+
+      {user.role === 'PROFESSOR' && (
+        <>
+          <Link to={`/cursoEdit/${idCurso}`}>
+            <Button icon={<EditOutlined />} type="primary">
+              Editar
+            </Button>
+          </Link>
+
+          <Button
+            icon={<DeleteOutlined />}
+            type="primary"
+            danger
+            style={{ marginLeft: '10px' }}
+          >
+            Deletar
+          </Button>
+        </>
+      )}
     </styles.Content>
   );
 }

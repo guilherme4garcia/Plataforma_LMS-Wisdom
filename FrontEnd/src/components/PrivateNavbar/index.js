@@ -24,7 +24,7 @@ export default function PrivateNavbar() {
       <Col span="3" style={colStyle}>
         <img src={Logo} alt="Logo" />
       </Col>
-      {user.isStudent === 'aluno' ? (
+      {user.role === 'ALUNO' ? (
         <>
           <Col span="3" style={colStyle}>
             <Menu mode="horizontal">

@@ -6,7 +6,13 @@ import { Route as ReactDOMRoute, Redirect } from 'react-router-dom';
 
 import { useAuth } from '../hooks/AuthContext';
 
-const Route = ({ isPrivate = false, Component, ...rest }) => {
+const Route = ({
+  isLoginOrSignup = false,
+  onlyTeacher = false,
+  isPrivate = false,
+  Component,
+  ...rest
+}) => {
   const { user } = useAuth();
 
   if (isPrivate && !user) {
@@ -18,6 +24,27 @@ const Route = ({ isPrivate = false, Component, ...rest }) => {
       />
     );
   }
+
+  if (isLoginOrSignup && user) {
+    return (
+      <Redirect
+        to={{
+          pathname: '/dashboard',
+        }}
+      />
+    );
+  }
+
+  if (onlyTeacher && user.role !== 'PROFESSOR') {
+    return (
+      <Redirect
+        to={{
+          pathname: '/dashboard',
+        }}
+      />
+    );
+  }
+
   return (
     <ReactDOMRoute
       {...rest}

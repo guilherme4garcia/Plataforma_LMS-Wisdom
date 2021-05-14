@@ -1,14 +1,14 @@
 import React from 'react';
+// import { useParams } from 'react-router-dom';
 
-import { Layout, Breadcrumb, Row, Col } from 'antd';
-import PrivateNavbar from '../../components/PrivateNavbar';
-import ClassesList from '~/components/ClassesList';
-import { useAuth } from '~/hooks/AuthContext';
+import { Layout, Row, Col, Breadcrumb } from 'antd';
+
+import PrivateNavbar from '~/components/PrivateNavbar';
 
 const { Header, Content } = Layout;
 
-function Dashboard() {
-  const { user } = useAuth();
+export default function CursoEdit() {
+  // const { idCurso } = useParams();
 
   return (
     <Layout style={{ height: '100vh' }} className="layout">
@@ -20,12 +20,10 @@ function Dashboard() {
           <Col span="2" />
           <Col span="20">
             <Breadcrumb style={{ margin: '16px 0' }}>
-              <Breadcrumb.Item>
-                {user.role === 'ALUNO' ? 'Aluno' : 'Professor'}
-              </Breadcrumb.Item>
-              <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
+              <Breadcrumb.Item>Professor</Breadcrumb.Item>
+              <Breadcrumb.Item>Editar Curso</Breadcrumb.Item>
             </Breadcrumb>
-            <ClassesList />
+            EDITAR CURSO
           </Col>
           <Col span="2" />
         </Row>
@@ -33,5 +31,3 @@ function Dashboard() {
     </Layout>
   );
 }
-
-export default Dashboard;
