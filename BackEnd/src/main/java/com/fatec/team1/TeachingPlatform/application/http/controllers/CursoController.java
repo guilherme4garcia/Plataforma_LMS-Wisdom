@@ -16,11 +16,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class CursoController implements WebMvcConfigurer {
 
     private final CursoRepository repository;
-    private final FileLocationService fileLocationService;
 
-    public CursoController(CursoRepository repository, FileLocationService fileLocationService) {
+    public CursoController(CursoRepository repository) {
         this.repository = repository;
-        this.fileLocationService = fileLocationService;
     }
 
     @PostMapping("/curso/new")

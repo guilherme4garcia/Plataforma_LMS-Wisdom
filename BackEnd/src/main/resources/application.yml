@@ -1,4 +1,7 @@
 spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
   datasource:
     url: jdbc:postgresql://tuffi.db.elephantsql.com:5432/lgikitpy
     username: lgikitpy

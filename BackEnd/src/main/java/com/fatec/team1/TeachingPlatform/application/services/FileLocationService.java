@@ -30,4 +30,11 @@ class FileLocationService {
 
         return fileSystemRepository.findInFileSystem(image.getLocation());
     }
+
+    public String findLocation(Long videoId) {
+        Image image = imageDbRepository.findById(videoId)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+
+        return (image.getLocation());
+    }
 }

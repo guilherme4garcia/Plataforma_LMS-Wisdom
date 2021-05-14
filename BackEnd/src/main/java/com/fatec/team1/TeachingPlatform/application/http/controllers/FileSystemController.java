@@ -39,6 +39,12 @@ public class FileSystemController {
         return videoID;
     }
 
+    @GetMapping(value = "session/video/{videoId}")
+    String retriveVideo(@PathVariable Long videoId) throws Exception {
+
+        return fileLocationService.findLocation(videoId);
+    }
+
     @GetMapping(value = "curso/image/{imageId}", produces = MediaType.IMAGE_PNG_VALUE)
     FileSystemResource downloadImage(@PathVariable Long imageId) throws Exception {
         return fileLocationService.find(imageId);
