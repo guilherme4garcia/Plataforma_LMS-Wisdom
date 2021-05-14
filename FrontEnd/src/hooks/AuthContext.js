@@ -30,12 +30,12 @@ const AuthProvider = ({ children }) => {
     localStorage.setItem('@Wisdom:token', token);
     localStorage.setItem('@Wisdom:user', JSON.stringify(userAccount));
 
-    setData({ token, userAccount });
+    setData({ token, user: userAccount });
   }, []);
 
   const signOut = useCallback(() => {
-    localStorage.removeItem('@Wisdom:token: token');
-    localStorage.removeItem('@Wisdom:user: user');
+    localStorage.removeItem('@Wisdom:token');
+    localStorage.removeItem('@Wisdom:user');
 
     setData({});
   }, []);

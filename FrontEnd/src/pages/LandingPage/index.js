@@ -7,10 +7,6 @@ import { Navbar } from '~/components/Navbar';
 const { Header, Content } = Layout;
 
 function LandingPage() {
-  function onChange(a, b, c) {
-    console.log(a, b, c);
-  }
-
   const contentStyle = {
     height: '25rem',
     color: '#fff',
@@ -25,18 +21,54 @@ function LandingPage() {
         <Navbar />
       </Header>
       <Content>
-        <Carousel autoplay afterChange={onChange}>
+        <Carousel autoplay>
           <div>
-            <h3 style={contentStyle}><center><img width = "100%" src='https://i.postimg.cc/fLLP8Qff/Tenha-acesso-diversos-cursos-gratuitamente-1.png' border='0'/></center></h3>
+            <h3 style={contentStyle}>
+              <center>
+                <img
+                  width="100%"
+                  src="https://i.postimg.cc/fLLP8Qff/Tenha-acesso-diversos-cursos-gratuitamente-1.png"
+                  border="0"
+                  alt="Img1"
+                />
+              </center>
+            </h3>
           </div>
           <div>
-            <h3 style={contentStyle}><center><img width = "100%" src='https://i.postimg.cc/wTVGYB4Q/Explore-dentre-diversas-reas-do-conhecimento.png' border='0'/></center></h3>
+            <h3 style={contentStyle}>
+              <center>
+                <img
+                  width="100%"
+                  src="https://i.postimg.cc/wTVGYB4Q/Explore-dentre-diversas-reas-do-conhecimento.png"
+                  border="0"
+                  alt="Img2"
+                />
+              </center>
+            </h3>
           </div>
           <div>
-            <h3 style={contentStyle}><center><img width = "100%" src='https://i.postimg.cc/25VkBMLg/Acesse-suas-aulas-em-qualquer-lugar-1.png' border='0'/></center></h3>
+            <h3 style={contentStyle}>
+              <center>
+                <img
+                  width="100%"
+                  src="https://i.postimg.cc/25VkBMLg/Acesse-suas-aulas-em-qualquer-lugar-1.png"
+                  border="0"
+                  alt="Img3"
+                />
+              </center>
+            </h3>
           </div>
           <div>
-            <h3 style={contentStyle}><center><img width = "100%" src='https://i.postimg.cc/Z5f3mkhQ/Tenha-controle-total-do-seu-aprendizado.png' border='0'/></center></h3>
+            <h3 style={contentStyle}>
+              <center>
+                <img
+                  width="100%"
+                  src="https://i.postimg.cc/Z5f3mkhQ/Tenha-controle-total-do-seu-aprendizado.png"
+                  border="0"
+                  alt="Img4"
+                />
+              </center>
+            </h3>
           </div>
         </Carousel>
 
