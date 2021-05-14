@@ -27,16 +27,16 @@ function LandingPage() {
       <Content>
         <Carousel autoplay afterChange={onChange}>
           <div>
-            <h3 style={contentStyle}>1</h3>
+            <h3 style={contentStyle}><center><img width = "100%" src='https://i.postimg.cc/fLLP8Qff/Tenha-acesso-diversos-cursos-gratuitamente-1.png' border='0'/></center></h3>
           </div>
           <div>
-            <h3 style={contentStyle}>2</h3>
+            <h3 style={contentStyle}><center><img width = "100%" src='https://i.postimg.cc/wTVGYB4Q/Explore-dentre-diversas-reas-do-conhecimento.png' border='0'/></center></h3>
           </div>
           <div>
-            <h3 style={contentStyle}>3</h3>
+            <h3 style={contentStyle}><center><img width = "100%" src='https://i.postimg.cc/25VkBMLg/Acesse-suas-aulas-em-qualquer-lugar-1.png' border='0'/></center></h3>
           </div>
           <div>
-            <h3 style={contentStyle}>4</h3>
+            <h3 style={contentStyle}><center><img width = "100%" src='https://i.postimg.cc/Z5f3mkhQ/Tenha-controle-total-do-seu-aprendizado.png' border='0'/></center></h3>
           </div>
         </Carousel>
 
