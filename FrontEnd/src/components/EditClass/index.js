@@ -1,3 +1,5 @@
+/* eslint-disable no-plusplus */
+/* eslint-disable react/prop-types */
 /* eslint-disable consistent-return */
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
@@ -17,10 +19,13 @@ import {
   InboxOutlined,
   MinusCircleOutlined,
   PlusOutlined,
+  SaveOutlined,
 } from '@ant-design/icons';
 import * as styles from './styles';
 
-export default function NewClass() {
+export default function EditClass({ data }) {
+  console.log(data);
+
   const onFinish = (values) => {
     console.log('Success:', values);
   };
@@ -44,9 +49,7 @@ export default function NewClass() {
       <Form
         name="basic"
         layout="vertical"
-        initialValues={{
-          remember: true,
-        }}
+        initialValues={data}
         onFinish={onFinish}
         onFinishFailed={onFinishFailed}
       >
@@ -238,8 +241,8 @@ export default function NewClass() {
           </Form.List>
 
           <Form.Item>
-            <Button type="primary" htmlType="submit">
-              Criar
+            <Button icon={<SaveOutlined />} type="primary" htmlType="submit">
+              Atualizar
             </Button>
           </Form.Item>
         </Card>

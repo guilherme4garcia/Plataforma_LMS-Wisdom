@@ -1,39 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import faker from 'faker';
-
-import { List, Card, Rate } from 'antd';
+import { List, Card, Rate, Typography } from 'antd';
 import { FiBookOpen } from 'react-icons/fi';
+import { classes } from '~/services/dataAPi';
 
 import * as styles from './styles';
 
-const data = [
-  {
-    id: faker.datatype.uuid(),
-    title: 'Title 1',
-    description: 'blá blá',
-    rating: 4,
-  },
-  {
-    id: faker.datatype.uuid(),
-    title: 'Title 2',
-    description: 'blá blá 2',
-    rating: 4.5,
-  },
-  {
-    id: faker.datatype.uuid(),
-    title: 'Title 3',
-    description: 'blá blá 3',
-    rating: 5,
-  },
-  {
-    id: faker.datatype.uuid(),
-    title: 'Title 4',
-    description: 'blá blá 4',
-    rating: 3,
-  },
-];
+const { Paragraph, Title } = Typography;
 
 export default function ClassesList() {
   return (
@@ -48,19 +22,25 @@ export default function ClassesList() {
           xl: 5,
           xxl: 5,
         }}
-        dataSource={data}
+        dataSource={classes}
         renderItem={(item) => (
           <List.Item>
             <Link to={`/cursoInfo/${item.id}`}>
               <Card
                 style={{ textAlign: 'center', borderRadius: '10px' }}
                 hoverable
-                title={item.title}
+                title={
+                  <Title level={5} ellipsis={{ tooltip: true }}>
+                    {item.title}
+                  </Title>
+                }
               >
                 <div className="icon-category">
                   <FiBookOpen />
                 </div>
-                {item.description}
+                <Paragraph ellipsis={{ rows: 1, tooltip: true }}>
+                  {item.description}
+                </Paragraph>
                 <br />
                 <Rate disabled allowHalf defaultValue={item.rating} />
               </Card>
