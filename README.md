@@ -23,11 +23,10 @@
 
 | Data | Links |
 | ------ | ------ |
-|    31/03/2021    |[Sprint 1](https://github.com/LeticiaSan/Plataforma-de-Ensino---Time-1/tree/sprint_1) |
-|    18/04/2021    |[Sprint 2](https://github.com/LeticiaSan/Plataforma-de-Ensino---Time-1/tree/sprint_2) |
-|    16/05/2021    |[Sprint 3](https://github.com/LeticiaSan/Plataforma-de-Ensino---Time-1/tree/sprint_3) |
 |    05/06/2021    |Sprint 4|
-
+|    16/05/2021    |[Sprint 3](https://github.com/LeticiaSan/Plataforma-de-Ensino---Time-1/tree/sprint_3) :sparkles: **New!** | 
+|    18/04/2021    |[Sprint 2](https://github.com/LeticiaSan/Plataforma-de-Ensino---Time-1/tree/sprint_2) |
+|    31/03/2021    |[Sprint 1](https://github.com/LeticiaSan/Plataforma-de-Ensino---Time-1/tree/sprint_1) |
 
 # Tecnologias
 [![forthebadge](https://forthebadge.com/images/badges/made-with-java.svg)](https://forthebadge.com) <br>
