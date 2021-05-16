@@ -1,7 +1,7 @@
-<h2 align="center">
+<h5 align="center">
       <center><img src="https://github.com/LeticiaSan/Plataforma-de-Ensino---Time-1/blob/main/wisdom_logo.png?raw=true">
       </center>    
-</h2>
+</h5>
 
 ![Wisdom_main-1](https://user-images.githubusercontent.com/40868447/118412297-973e4e00-b66f-11eb-8871-8c60706dc4c4.jpg)
 
