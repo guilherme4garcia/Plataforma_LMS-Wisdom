@@ -1,27 +1,32 @@
+<h2 align="center">
+      <center><img src="https://github.com/guilherme4garcia/test/blob/main/images/31.png?raw=true">
+      </center>    
+</h2>
 
-<h3 align="center">
-      <center><img src="https://i.imgur.com/b0rTKpo.png"></center>
-</h3>
-
-<h3 align="center"> 
-Aprendizado descomplicado para qualquer pessoa, em qualquer lugar </h3> <br>
+![Wisdom_main-1](https://user-images.githubusercontent.com/40868447/118412297-973e4e00-b66f-11eb-8871-8c60706dc4c4.jpg)
 
 
+
+ <h2>
  <p align="center">
-    <a href="#Sobre-o-projeto">Sobre o Projeto</a> •
-    <a href="#Tecnologias">Tecnologias</a> •
     <a href="#Sprints">Sprints</a> •
+    <a href="#Tecnologias">Tecnologias</a> •
     <a href="#Backlog">Backlog</a> •
     <a href="#User-Stories">User Stories</a> •
-    <a href="#Equipe">Equipe</a> •
- </p> 
+    <a href="#Equipe">Equipe</a>
+ </p></h2> 
  <br>
  
+# Sprints
 
-# Sobre o projeto
+**Aqui você pode acompanhar os estágios de desenvolvimento com notas de atualização de cada Sprint:**
 
-Desenvolver uma plataforma web voltada ao ensino à distância para a gestão e oferta de conhecimento, dando suporte às mais diversas arquiteturas de aprendizagem, alinhado com os objetivos estratégicos a serem alcançados por cada organização.
-
+| Data | Links |
+| ------ | ------ |
+|    31/03/2021    |[Sprint 1](https://github.com/LeticiaSan/Plataforma-de-Ensino---Time-1/tree/sprint_1) |
+|    18/04/2021    |[Sprint 2](https://github.com/LeticiaSan/Plataforma-de-Ensino---Time-1/tree/sprint_2) |
+|    16/05/2021    |[Sprint 3](https://github.com/LeticiaSan/Plataforma-de-Ensino---Time-1/tree/sprint_3) |
+|    05/06/2021    |Sprint 4|
 
 
 # Tecnologias
@@ -32,15 +37,6 @@ Desenvolver uma plataforma web voltada ao ensino à distância para a gestão e 
 <img alt="MySQL" src="https://img.shields.io/badge/mysql-%2300f.svg?&style=for-the-badge&logo=mysql&logoColor=white"/>
 <img alt="React" src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
 <img alt="Spring" src="https://img.shields.io/badge/spring%20-%236DB33F.svg?&style=for-the-badge&logo=spring&logoColor=white"/>
-
-# Sprints
-
-| Data | Links |
-| ------ | ------ |
-|    31/03/2021    |[Sprint 1](https://github.com/LeticiaSan/Plataforma-de-Ensino---Time-1/tree/sprint_1) |
-|    18/04/2021    |[Sprint 2](https://github.com/LeticiaSan/Plataforma-de-Ensino---Time-1/tree/sprint_2) |
-|    16/05/2021    |Sprint 3|
-|    05/06/2021    |Sprint 4|
 
 
 # Backlog
