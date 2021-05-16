@@ -1,5 +1,5 @@
 <h2 align="center">
-      <center><img src="https://github.com/guilherme4garcia/test/blob/main/images/31.png?raw=true">
+      <center><img src="https://github.com/LeticiaSan/Plataforma-de-Ensino---Time-1/blob/main/wisdom_logo.png?raw=true">
       </center>    
 </h2>
 
