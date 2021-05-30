@@ -4,6 +4,8 @@ CREATE TABLE IF NOT EXISTS "Curso" (
   "idCurso" SERIAL PRIMARY KEY,
   "nomeCurso" VARCHAR(45) NOT NULL,
   "idUsuario_fk" INT NOT NULL,
+  "imagem_curso_id" TEXT NOT NULL,
+  "categoria_curso" TEXT NOT NULL,
   CONSTRAINT "fk_Curso_Usuario"
     FOREIGN KEY ("idUsuario_fk")
     REFERENCES "user_account" ("id")

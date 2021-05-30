@@ -17,6 +17,7 @@ public class Sessions {
     private long id;
     private String description;
     private long videoId;
+    private long courseId;
     private String informations;
 
     public Sessions(Sessions sessions){
