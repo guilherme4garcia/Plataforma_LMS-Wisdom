@@ -1,67 +1,54 @@
-
-<h3 align="center">
-      <center><img src="https://i.imgur.com/b0rTKpo.png"></center>
-</h3>
-
-<h3 align="center"> 
-Aprendizado descomplicado para qualquer pessoa, em qualquer lugar </h3> <br>
+# Plataforma-de-Ensino---Time-1
 
 
- <p align="center">
-    <a href="#Sobre-o-projeto">Sobre o Projeto</a> •
-    <a href="#Tecnologias">Tecnologias</a> •
-    <a href="#Sprints">Sprints</a> •
-    <a href="#Backlog">Backlog</a> •
-    <a href="#User-Stories">User Stories</a> •
-    <a href="#Equipe">Equipe</a> •
- </p> 
- <br>
- 
+# Sprint 2
+<hr>
+<img src="https://i.imgur.com/5CSEuGN.png">
 
-# Sobre o projeto
+## Burndown
 
-Desenvolver uma plataforma web voltada ao ensino à distância para a gestão e oferta de conhecimento, dando suporte às mais diversas arquiteturas de aprendizagem, alinhado com os objetivos estratégicos a serem alcançados por cada organização.
+<hr>
+<img src="https://i.imgur.com/S2k8Mrf.png">
 
+## MER
 
+<hr>
+<img src="https://media.discordapp.net/attachments/809534694173573136/822556865698332712/unknown.png?width=671&height=498">
 
-# Tecnologias
-[![forthebadge](https://forthebadge.com/images/badges/made-with-java.svg)](https://forthebadge.com) <br>
-[![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) 
-[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)<br>
-<img alt="MySQL" src="https://img.shields.io/badge/mysql-%2300f.svg?&style=for-the-badge&logo=mysql&logoColor=white"/>
-<img alt="React" src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
-<img alt="Spring" src="https://img.shields.io/badge/spring%20-%236DB33F.svg?&style=for-the-badge&logo=spring&logoColor=white"/>
+## Protótipos
 
-# Sprints
+Categorias:
+<img src="https://i.imgur.com/HlQlcb0.png">
 
-| Data | Links |
-| ------ | ------ |
-|    31/03/2021    |[Sprint 1](https://github.com/LeticiaSan/Plataforma-de-Ensino---Time-1/tree/sprint_1) |
-|    18/04/2021    |[Sprint 2](https://github.com/LeticiaSan/Plataforma-de-Ensino---Time-1/tree/sprint_2) |
-|    16/05/2021    |Sprint 3|
-|    05/06/2021    |Sprint 4|
+Cadastro curso: <br>
+<img src="https://i.imgur.com/g2e5Ri3.png">
 
+Cadastro curso 2: <br>
+<img src="https://i.imgur.com/ZMf00iP.png">
 
-# Backlog
-<img alt="Backlog" src="https://media.discordapp.net/attachments/809534694173573136/821877091363979274/backlog1_1.png?width=391&height=498"/>
+Grid de cursos:
+<hr>
+<img src="https://i.imgur.com/snLjx1v.png">
 
-# User Stories
-<img alt="UserStories" src="https://media.discordapp.net/attachments/811312529740922880/827025091828776970/unknown.png?width=709&height=498"/>
+Página inicial Professor:
+<img src="https://i.imgur.com/XC85a6o.png">
 
-# Equipe
+## Telas
 
-[![Github Badge](https://img.shields.io/badge/MASTER-Letícia_Santos-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LeticiaSan)
+https://user-images.githubusercontent.com/40868447/115127902-80450700-9fb0-11eb-8da8-f55eca74080f.mp4
 
-[![Github Badge](https://img.shields.io/badge/PO-Guilherme_Garcia-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/guilherme4garcia)
+Tela inicial:
+<img src="https://i.imgur.com/84Xm0bZ.png">
 
-[![Github Badge](https://img.shields.io/badge/DEV-Gabriel_Teixeira-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Gabrieltg7)
+Dashboard:
+<img src="https://i.imgur.com/dZ1SaYL.png">
 
-[![Github Badge](https://img.shields.io/badge/DEV-Luis_Verola-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LVerola)
+Professor_ Novo curso:
+<img src="https://i.imgur.com/zTMcN9H.png">
 
-[![Github Badge](https://img.shields.io/badge/DEV-Lucca_Santiago-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LuccaSantiagoDev)
+Categorias:
+<img src="https://i.imgur.com/C41ZiGF.png">
 
-[![Github Badge](https://img.shields.io/badge/DEV-Henrique_Erzinger-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/henrique73)
-
-
+Aluno_ Informações do Curso:
+<img src="https://i.imgur.com/E2Gwwb8.png">
 
