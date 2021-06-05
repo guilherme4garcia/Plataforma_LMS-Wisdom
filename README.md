@@ -1,8 +1,10 @@
-![Sprint_3 (1)](https://user-images.githubusercontent.com/40868447/118412879-c99d7a80-b672-11eb-9f29-2e05cc948f2e.png)
+
+![Sprint_4](https://user-images.githubusercontent.com/40868447/120831572-0f44b900-c536-11eb-8f2e-ef1ab631e7ef.png)
 
 ## 🔹 BURNDOWN
 
-![burndown_sprint3](https://user-images.githubusercontent.com/40868447/118413452-c9eb4500-b675-11eb-9f09-e0aad9c0bef6.png)
+![Burndown Sprint_4](https://user-images.githubusercontent.com/40868447/120831518-fe944300-c535-11eb-8d21-93c87fa6393e.png)
+
 
 ## 🔹 CRIAÇÃO DE SEÇÕES PARA O CURSO
 **Para facilitar a criação do curso, e auxiliar o aluno em seu aprendizado, acrescentamos as SEÇÕES, cada seção é como uma única aula, onde o docente colocará o vídeo e outras informações referentes à aquele capítulo.**
