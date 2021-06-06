@@ -29,6 +29,8 @@
 
 ![image](https://cdn.discordapp.com/attachments/811312529740922880/851231600142188554/unknown.png)
   
-## 🔹 Video Demonstrativo: 
-![asciicast](https://cdn.discordapp.com/attachments/811312529740922880/851230203035385906/simplescreenrecorder-2021-06-06_14.30.51.mp4)
+## 🔹 Vídeo Demonstrativo: 
+
+https://user-images.githubusercontent.com/62018632/120943019-cf7efc80-c702-11eb-97b8-9eb7433cda8e.mp4
+
 
