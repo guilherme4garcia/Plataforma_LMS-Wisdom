@@ -16,14 +16,15 @@ public class Curso{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String nomeCurso;
-    private int UsuarioIdUsuario;
+    private int usuarioIdUsuario;
     private String categoriaCurso;
     private long imagemCursoId;
+    private String courseDescription;
 
     public Curso(Curso curso) {
         this.id = curso.getId();
         this.nomeCurso = curso.getNomeCurso();
-        this.UsuarioIdUsuario = curso.getUsuarioIdUsuario();
+        this.usuarioIdUsuario = curso.getUsuarioIdUsuario();
     }
 
 }

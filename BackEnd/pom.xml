@@ -116,9 +116,9 @@
 					</execution>
 				</executions>
 				<configuration>
-					<url>jdbc:postgresql://tuffi.db.elephantsql.com:5432/lgikitpy</url>
-					<user>lgikitpy</user>
-					<password>6ZtwOXwzjhQfkWGhQ0y_0e1hD4ay_o1Q</password>
+					<url>jdbc:postgresql://tuffi.db.elephantsql.com/yavyclwi</url>
+					<user>yavyclwi</user>
+					<password>dGiRzVVRsQH5d5Ckm7htNdLptSTj_RUR</password>
 					<schemas>
 						<schema>public</schema>
 					</schemas>

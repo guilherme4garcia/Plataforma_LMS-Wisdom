@@ -1,67 +1,33 @@
 
-<h3 align="center">
-      <center><img src="https://i.imgur.com/b0rTKpo.png"></center>
-</h3>
+![Sprint_4](https://user-images.githubusercontent.com/40868447/120831572-0f44b900-c536-11eb-8f2e-ef1ab631e7ef.png)
 
-<h3 align="center"> 
-Aprendizado descomplicado para qualquer pessoa, em qualquer lugar </h3> <br>
+## 🔹 BURNDOWN
 
-
- <p align="center">
-    <a href="#Sobre-o-projeto">Sobre o Projeto</a> •
-    <a href="#Tecnologias">Tecnologias</a> •
-    <a href="#Sprints">Sprints</a> •
-    <a href="#Backlog">Backlog</a> •
-    <a href="#User-Stories">User Stories</a> •
-    <a href="#Equipe">Equipe</a> •
- </p> 
- <br>
- 
-
-# Sobre o projeto
-
-Desenvolver uma plataforma web voltada ao ensino à distância para a gestão e oferta de conhecimento, dando suporte às mais diversas arquiteturas de aprendizagem, alinhado com os objetivos estratégicos a serem alcançados por cada organização.
+![Burndown Sprint_4](https://user-images.githubusercontent.com/40868447/120831518-fe944300-c535-11eb-8d21-93c87fa6393e.png)
 
 
+## 🔹 CRIAÇÃO DE SEÇÕES PARA O CURSO
+**Para facilitar a criação do curso, e auxiliar o aluno em seu aprendizado, acrescentamos as SEÇÕES, cada seção é como uma única aula, onde o docente colocará o vídeo e outras informações referentes à aquele capítulo.**
 
-# Tecnologias
-[![forthebadge](https://forthebadge.com/images/badges/made-with-java.svg)](https://forthebadge.com) <br>
-[![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) 
-[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)<br>
-<img alt="MySQL" src="https://img.shields.io/badge/mysql-%2300f.svg?&style=for-the-badge&logo=mysql&logoColor=white"/>
-<img alt="React" src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
-<img alt="Spring" src="https://img.shields.io/badge/spring%20-%236DB33F.svg?&style=for-the-badge&logo=spring&logoColor=white"/>
+## _Prototipação_ ✏️
 
-# Sprints
+**Protótipo de como seria a criação de uma seção dentro de um curso pelo professor**
 
-| Data | Links |
-| ------ | ------ |
-|    31/03/2021    |[Sprint 1](https://github.com/LeticiaSan/Plataforma-de-Ensino---Time-1/tree/sprint_1) |
-|    18/04/2021    |[Sprint 2](https://github.com/LeticiaSan/Plataforma-de-Ensino---Time-1/tree/sprint_2) |
-|    16/05/2021    |Sprint 3|
-|    05/06/2021    |Sprint 4|
+![image](https://user-images.githubusercontent.com/40868447/118413478-eb4c3100-b675-11eb-99e2-da4c1119b119.png)
 
+## _Resultado_ ✔️
 
-# Backlog
-<img alt="Backlog" src="https://media.discordapp.net/attachments/809534694173573136/821877091363979274/backlog1_1.png?width=391&height=498"/>
+**Imagem da criação de uma seção**
 
-# User Stories
-<img alt="UserStories" src="https://media.discordapp.net/attachments/811312529740922880/827025091828776970/unknown.png?width=709&height=498"/>
+![image](https://i.postimg.cc/Fs2zVGBW/Whats-App-Image-2021-05-14-at-23-25-22.jpg)
 
-# Equipe
+## 🔹 MUDANÇAS NA PÁGINA INICIAL 
 
-[![Github Badge](https://img.shields.io/badge/MASTER-Letícia_Santos-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LeticiaSan)
+**O uso de imagens e textos em um carrossel, tornando a página inicial mais receptiva, mantendo a identidade visual**
 
-[![Github Badge](https://img.shields.io/badge/PO-Guilherme_Garcia-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/guilherme4garcia)
+![image](https://i.postimg.cc/fTZDzF1h/p-gina-inicial.png)
 
-[![Github Badge](https://img.shields.io/badge/DEV-Gabriel_Teixeira-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Gabrieltg7)
-
-[![Github Badge](https://img.shields.io/badge/DEV-Luis_Verola-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LVerola)
-
-[![Github Badge](https://img.shields.io/badge/DEV-Lucca_Santiago-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LuccaSantiagoDev)
-
-[![Github Badge](https://img.shields.io/badge/DEV-Henrique_Erzinger-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/henrique73)
-
-
+  
+## 🔹 Video Demonstrativo: 
+https://user-images.githubusercontent.com/40868447/118647051-4afe2580-b7b7-11eb-885a-b7b2377e4987.mp4
 

@@ -2,6 +2,7 @@ package com.fatec.team1.TeachingPlatform.application.services;
 
 import com.fatec.team1.TeachingPlatform.application.repositories.CursoRepository;
 import com.fatec.team1.TeachingPlatform.domain.Curso;
+import com.fatec.team1.TeachingPlatform.domain.Matricula;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,6 +22,18 @@ public class CursoService {
                 .stream()
                 .map(Curso::new)
                 .collect(Collectors.toList());
+    }
+
+    public List<Curso> listCategory(String categoria) {
+        List<Curso> list = repository.findAll()
+                .stream()
+                .filter(curso -> categoria.equals(curso.getCategoriaCurso()))
+                .collect(Collectors.toList());
+         return list;
+    }
+
+    public List<Curso> findCourseByCategory(String categoria) {
+        return repository.findAllByCategoriaCurso(categoria);
     }
 
     public Curso findById(Long id) {

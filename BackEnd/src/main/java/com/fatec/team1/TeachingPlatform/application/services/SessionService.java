@@ -21,4 +21,10 @@ public class SessionService {
     public void save(Sessions sessions) {
         sessionRepository.save(sessions);
     }
+
+//    public Sessions findAllByCourse(Long id){
+//        sessionRepository.findAll()
+//                .stream()
+//                .filter(course -> (course.get))
+//    }
 }

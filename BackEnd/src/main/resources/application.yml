@@ -3,9 +3,9 @@ spring:
     multipart:
       max-file-size: 100MB
   datasource:
-    url: jdbc:postgresql://tuffi.db.elephantsql.com:5432/lgikitpy
-    username: lgikitpy
-    password: 6ZtwOXwzjhQfkWGhQ0y_0e1hD4ay_o1Q
+    url: jdbc:postgresql://tuffi.db.elephantsql.com/yavyclwi
+    username: yavyclwi
+    password: dGiRzVVRsQH5d5Ckm7htNdLptSTj_RUR
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
