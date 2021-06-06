@@ -30,5 +30,5 @@
 ![image](https://cdn.discordapp.com/attachments/811312529740922880/851231600142188554/unknown.png)
   
 ## 🔹 Video Demonstrativo: 
-![Watch the video](https://cdn.discordapp.com/attachments/811312529740922880/851230203035385906/simplescreenrecorder-2021-06-06_14.30.51.mp4)
+![asciicast](https://cdn.discordapp.com/attachments/811312529740922880/851230203035385906/simplescreenrecorder-2021-06-06_14.30.51.mp4)
 
