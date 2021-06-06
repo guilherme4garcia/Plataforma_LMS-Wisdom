@@ -23,7 +23,7 @@ export function Navbar() {
 
   return (
     <Row>
-      <Col span="2"/>
+      <Col span="2" />
       <Col span="3" style={colStyle}>
         <img src={Logo} alt="Logo" />
       </Col>

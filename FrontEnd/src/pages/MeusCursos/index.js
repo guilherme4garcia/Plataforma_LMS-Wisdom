@@ -2,14 +2,11 @@ import React from 'react';
 
 import { Layout, Breadcrumb, Row, Col } from 'antd';
 import PrivateNavbar from '../../components/PrivateNavbar';
-import ClassesList from '~/components/ClassesList';
-import { useAuth } from '~/hooks/AuthContext';
+import MyClassesList from '~/components/MyClassesList';
 
 const { Header, Content } = Layout;
 
-function Dashboard() {
-  const { user } = useAuth();
-
+function MeusCursos() {
   return (
     <Layout style={{ height: '100vh' }} className="layout">
       <Header style={{ background: '#fff' }}>
@@ -20,14 +17,10 @@ function Dashboard() {
           <Col span="2" />
           <Col span="20">
             <Breadcrumb style={{ margin: '16px 0' }}>
-              <Breadcrumb.Item>
-                {user.role === 'ALUNO' ? 'Aluno' : 'Professor'}
-              </Breadcrumb.Item>
-              <Breadcrumb.Item>
-                {user.role === 'ALUNO' ? 'Todos os Cursos' : 'Dashboard'}
-              </Breadcrumb.Item>
+              <Breadcrumb.Item>Aluno</Breadcrumb.Item>
+              <Breadcrumb.Item>Meus Cursos</Breadcrumb.Item>
             </Breadcrumb>
-            <ClassesList />
+            <MyClassesList />
           </Col>
           <Col span="2" />
         </Row>
@@ -36,4 +29,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default MeusCursos;

@@ -18,15 +18,17 @@ import {
   MinusCircleOutlined,
   PlusOutlined,
 } from '@ant-design/icons';
+import { useHistory } from 'react-router-dom';
 import * as styles from './styles';
+import { useClass } from '~/services/dataHooks';
 
 export default function NewClass() {
-  const onFinish = (values) => {
-    console.log('Success:', values);
-  };
+  const history = useHistory();
+  const { AddData } = useClass();
 
-  const onFinishFailed = (errorInfo) => {
-    console.log('Failed:', errorInfo);
+  const onFinish = async (values) => {
+    await AddData(values);
+    history.push('/dashboard');
   };
 
   const normFile = (e) => {
@@ -48,7 +50,6 @@ export default function NewClass() {
           remember: true,
         }}
         onFinish={onFinish}
-        onFinishFailed={onFinishFailed}
       >
         <Card title="Dados do curso" style={{ width: '100%' }} bordered={false}>
           <Form.Item
