@@ -3,15 +3,20 @@ import { Link } from 'react-router-dom';
 
 import { List, Card, Rate, Typography } from 'antd';
 import { FiBookOpen } from 'react-icons/fi';
-// import { classes } from '~/services/dataAPi';
 
 import * as styles from './styles';
 import { useClass } from '~/services/dataHooks';
+import { useAuth } from '~/hooks/AuthContext';
 
 const { Paragraph, Title } = Typography;
 
-export default function ClassesList() {
+export default function MyClassesList() {
   const { classes } = useClass();
+  const { user } = useAuth();
+
+  const listArray = classes.filter(
+    (classe) => classe.students[0].id === user.id
+  );
 
   return (
     <styles.Content>
@@ -25,7 +30,7 @@ export default function ClassesList() {
           xl: 5,
           xxl: 5,
         }}
-        dataSource={classes}
+        dataSource={listArray}
         renderItem={(item) => (
           <List.Item>
             <Link to={`/cursoInfo/${item.id}`}>

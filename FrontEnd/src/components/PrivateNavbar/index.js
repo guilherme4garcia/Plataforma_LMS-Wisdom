@@ -12,7 +12,6 @@ const colStyle = {
   alignItems: 'center',
 };
 const { Search } = Input;
-const { SubMenu } = Menu;
 
 export default function PrivateNavbar() {
   const history = useHistory();
@@ -27,12 +26,16 @@ export default function PrivateNavbar() {
       {user.role === 'ALUNO' ? (
         <>
           <Col span="3" style={colStyle}>
-            <Menu mode="horizontal">
-              <SubMenu key="SubMenu" title=" Categorias">
-                <Menu.Item key="bio">Biologia</Menu.Item>
-                <Menu.Item key="math">Matemática</Menu.Item>
-                <Menu.Item key="tech">Tecnologia</Menu.Item>
-              </SubMenu>
+            <Menu
+              mode="horizontal"
+              defaultSelectedKeys={window.location.pathname}
+            >
+              <Menu.Item
+                key="/dashboard"
+                onClick={() => history.push('/dashboard')}
+              >
+                Todos os Cursos
+              </Menu.Item>
             </Menu>
           </Col>
           <Col span="6" style={colStyle}>
@@ -42,8 +45,16 @@ export default function PrivateNavbar() {
             />
           </Col>
           <Col span="4" style={colStyle}>
-            <Menu mode="horizontal">
-              <Menu.Item key="Classes">Meus Cursos</Menu.Item>
+            <Menu
+              mode="horizontal"
+              defaultSelectedKeys={window.location.pathname}
+            >
+              <Menu.Item
+                key="/meusCursos"
+                onClick={() => history.push('/meusCursos')}
+              >
+                Meus Cursos
+              </Menu.Item>
             </Menu>
           </Col>
         </>

@@ -14,6 +14,38 @@ export const classes = [
           'Fundamentos basicos da lib do faker para uso no dia a dia',
       },
     ],
+    students: [
+      {
+        name: 'Carlos',
+        isApproved: true,
+        rejected: false,
+      },
+      {
+        name: 'Otávio',
+        isApproved: true,
+        rejected: false,
+      },
+      {
+        name: 'Ronald',
+        isApproved: false,
+        rejected: false,
+      },
+      {
+        name: 'Ana',
+        isApproved: false,
+        rejected: false,
+      },
+    ],
+    commentaries: [
+      {
+        user: 'Carlos',
+        content: 'Ótimo Curso!',
+      },
+      {
+        user: 'Otávio',
+        content: 'Péssimo Curso!',
+      },
+    ],
   },
   {
     id: 'dfa652b0-e5be-426b-9e34-823cd2bc3c08',
@@ -37,6 +69,38 @@ export const classes = [
           'Procure a documentação do useEffect para aumentar seu conhecimento',
       },
     ],
+    students: [
+      {
+        name: 'Carlos',
+        isApproved: true,
+        rejected: false,
+      },
+      {
+        name: 'Otávio',
+        isApproved: true,
+        rejected: false,
+      },
+      {
+        name: 'Ronald',
+        isApproved: false,
+        rejected: false,
+      },
+      {
+        name: 'Ana',
+        isApproved: false,
+        rejected: false,
+      },
+    ],
+    commentaries: [
+      {
+        user: 'Carlos',
+        content: 'Ótimo Curso!',
+      },
+      {
+        user: 'Otávio',
+        content: 'Péssimo Curso!',
+      },
+    ],
   },
   {
     id: '63d18de6-5053-4eab-8f23-034622c7378b',
@@ -51,6 +115,38 @@ export const classes = [
         name: 'Fundamentos do Axios',
         description:
           'Explicação básica de como o Axios pode auxiliar no dia a dia conectando back-end e front-end',
+      },
+    ],
+    students: [
+      {
+        name: 'Carlos',
+        isApproved: true,
+        rejected: false,
+      },
+      {
+        name: 'Otávio',
+        isApproved: true,
+        rejected: false,
+      },
+      {
+        name: 'Ronald',
+        isApproved: false,
+        rejected: false,
+      },
+      {
+        name: 'Ana',
+        isApproved: false,
+        rejected: false,
+      },
+    ],
+    commentaries: [
+      {
+        user: 'Carlos',
+        content: 'Ótimo Curso!',
+      },
+      {
+        user: 'Otávio',
+        content: 'Péssimo Curso!',
       },
     ],
   },
@@ -80,6 +176,38 @@ export const classes = [
         description: 'Vamos aprender como configurar corretamente o prettier',
         extras:
           'Tudo sobre configurações do prettier você pode encontrar na documentação oficial',
+      },
+    ],
+    students: [
+      {
+        name: 'Carlos',
+        isApproved: true,
+        rejected: false,
+      },
+      {
+        name: 'Otávio',
+        isApproved: true,
+        rejected: false,
+      },
+      {
+        name: 'Ronald',
+        isApproved: false,
+        rejected: false,
+      },
+      {
+        name: 'Ana',
+        isApproved: false,
+        rejected: false,
+      },
+    ],
+    commentaries: [
+      {
+        user: 'Carlos',
+        content: 'Ótimo Curso!',
+      },
+      {
+        user: 'Otávio',
+        content: 'Péssimo Curso!',
       },
     ],
   },

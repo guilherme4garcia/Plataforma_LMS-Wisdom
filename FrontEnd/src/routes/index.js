@@ -7,6 +7,7 @@ import SignIn from '../pages/SignIn';
 import SignUp from '../pages/SignUp';
 
 import Dashboard from '../pages/Dashboard';
+import MeusCursos from '../pages/MeusCursos';
 import NewClassPage from '../pages/NewClass';
 import CursoInfo from '~/pages/CursoInfo';
 import CursoEdit from '~/pages/CursoEdit';
@@ -19,6 +20,7 @@ export default function Routes() {
       <Route path="/signup" exact component={SignUp} isLoginOrSignup />
 
       <Route path="/dashboard" component={Dashboard} isPrivate />
+      <Route path="/meusCursos" component={MeusCursos} isPrivate />
       <Route path="/newClass" component={NewClassPage} isPrivate />
 
       <Route path="/cursoInfo/:idCurso" component={CursoInfo} isPrivate />

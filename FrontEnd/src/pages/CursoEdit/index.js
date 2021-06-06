@@ -7,12 +7,13 @@ import { Layout, Row, Col, Breadcrumb } from 'antd';
 
 import { useParams } from 'react-router-dom';
 import PrivateNavbar from '~/components/PrivateNavbar';
-import { classes } from '~/services/dataAPi';
 import EditClass from '~/components/EditClass';
+import { useClass } from '~/services/dataHooks';
 
 const { Header, Content } = Layout;
 
 export default function CursoEdit() {
+  const { classes } = useClass();
   const { idCurso } = useParams();
 
   function findId(data, idToLookFor) {

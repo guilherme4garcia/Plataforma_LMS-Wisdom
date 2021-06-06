@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { createContext, useCallback, useState, useContext } from 'react';
 
-import api from '../services/api';
+// import api from '../services/api';
 
 const AuthContext = createContext({});
 
@@ -18,19 +18,48 @@ const AuthProvider = ({ children }) => {
   });
 
   const signIn = useCallback(async ({ username, password }) => {
-    const response = await api.post('authenticate', {
-      username,
-      password,
-    });
+    // const response = await api.post('authenticate', {
+    //   username,
+    //   password,
+    // });
 
-    const { jwtResponse, userAccount } = response.data;
+    // const { jwtResponse, userAccount } = response.data;
 
-    const { token } = jwtResponse;
+    // const { token } = jwtResponse;
 
-    localStorage.setItem('@Wisdom:token', token);
-    localStorage.setItem('@Wisdom:user', JSON.stringify(userAccount));
+    if (username === 'professor@teste.com') {
+      const userAccount = {
+        id: 12345678910,
+        name: 'Professor Teste',
+        email: username,
+        password,
+        role: 'PROFESSOR',
+      };
 
-    setData({ token, user: userAccount });
+      const token =
+        'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoZW5yaXF1ZWVyemluZ2VyZEBnbWFpbC5jb20iLCJleHAiOjE2MTg3NzQ0NzksImlhdCI6MTYxODc1NjQ3OX0.lqSwC29hXUHObAU4P2solyiM_bnnpdiTvx_Yhc8PfJlerUOblYq40rVCbnAj37HoW5nKvaArRVqpo3tfjCbR4Q';
+
+      localStorage.setItem('@Wisdom:token', token);
+      localStorage.setItem('@Wisdom:user', JSON.stringify(userAccount));
+
+      setData({ token, user: userAccount });
+    } else {
+      const userAccount = {
+        id: 1,
+        name: 'Aluno Teste',
+        email: username,
+        password,
+        role: 'ALUNO',
+      };
+
+      const token =
+        'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoZW5yaXF1ZWVyemluZ2VyZEBnbWFpbC5jb20iLCJleHAiOjE2MTg3NzQ0NzksImlhdCI6MTYxODc1NjQ3OX0.lqSwC29hXUHObAU4P2solyiM_bnnpdiTvx_Yhc8PfJlerUOblYq40rVCbnAj37HoW5nKvaArRVqpo3tfjCbR4Q';
+
+      localStorage.setItem('@Wisdom:token', token);
+      localStorage.setItem('@Wisdom:user', JSON.stringify(userAccount));
+
+      setData({ token, user: userAccount });
+    }
   }, []);
 
   const signOut = useCallback(() => {

@@ -21,17 +21,17 @@ import {
   PlusOutlined,
   SaveOutlined,
 } from '@ant-design/icons';
+import { useHistory } from 'react-router-dom';
 import * as styles from './styles';
+import { useClass } from '~/services/dataHooks';
 
 export default function EditClass({ data }) {
-  console.log(data);
+  const history = useHistory();
+  const { EditData } = useClass();
 
   const onFinish = (values) => {
-    console.log('Success:', values);
-  };
-
-  const onFinishFailed = (errorInfo) => {
-    console.log('Failed:', errorInfo);
+    EditData(data.id, values, data.rating);
+    history.push('/dashboard');
   };
 
   const normFile = (e) => {
@@ -51,7 +51,6 @@ export default function EditClass({ data }) {
         layout="vertical"
         initialValues={data}
         onFinish={onFinish}
-        onFinishFailed={onFinishFailed}
       >
         <Card title="Dados do curso" style={{ width: '100%' }} bordered={false}>
           <Form.Item
